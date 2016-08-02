@@ -1,2 +1,5 @@
-angular
-    .module('app', []);
+
+
+var myApp = angular.module('myApp', []);
+
+myApp.controller('ContactController')
