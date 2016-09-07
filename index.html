@@ -9,8 +9,13 @@
 <body>
 
     <div ng-app="app">
-        <div ng-controller="ContactController">
-            Hello, {{ name }}!
+        <div ng-controller="ContactController as contact">
+            Hello, {{ contact.name }}!
+
+            <div ng-cotroller="StaffController as staff">
+                {{ staff.name }}
+                <button ng-click="contac.changeName()">Change Name</button>
+            </div>    
         </div>
     </div>
 
